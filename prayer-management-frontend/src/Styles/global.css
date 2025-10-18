@@ -1,0 +1,101 @@
+:root {
+  --bg: #0f0f13;
+  --card: #16161d;
+  --muted: #acb0bf;
+  --text: #e7e9ee;
+  --brand: #ffd400;
+  --accent: #6e7ff6;
+  --danger: #ff5b5b;
+  --ring: 0 0 0 3px rgba(110, 127, 246, 0.35);
+  --radius: 12px;
+  --space: 16px;
+  --font-sans: "Poppins", system-ui, -apple-system, Segoe UI, Roboto, "Helvetica Neue",
+    Arial, "Noto Sans", "Apple Color Emoji", "Segoe UI Emoji";
+  --font-display: "Goldman", var(--font-sans);
+}
+
+* {
+  box-sizing: border-box;
+}
+html,
+body,
+#root {
+  height: 100%;
+}
+body {
+  margin: 0;
+  color: var(--text);
+  background: radial-gradient(1200px 600px at 10% -10%, #1b1b24 0%, #0f0f13 55%) fixed;
+  font-family: var(--font-sans);
+  -webkit-font-smoothing: antialiased;
+  text-rendering: optimizeLegibility;
+}
+a {
+  color: inherit;
+  text-decoration: none;
+}
+button {
+  font-family: inherit;
+}
+img {
+  display: block;
+  max-width: 200%;
+}
+
+.btn {
+  padding: 10px 14px;
+  border-radius: 10px;
+  border: 1px solid transparent;
+  background: linear-gradient(180deg, #1d1d26, #15151c);
+  color: var(--text);
+  cursor: pointer;
+  transition: 0.2s ease transform, 0.2s ease background, 0.2s ease border-color;
+}
+.btn:hover {
+  transform: translateY(-1px);
+}
+.btn:focus-visible {
+  outline: none;
+  box-shadow: var(--ring);
+}
+.btn.ghost {
+  background: transparent;
+  border-color: #ffe600;
+  border-width: 2px;
+  text-decoration: underline #ffe600;  
+}
+.btn.ghost:hover {
+  background: #ffe60085;
+
+}
+.btn.see-more {
+  background: var(--brand);
+  color: #121212;
+  font-weight: 600;
+}
+.btn.danger {
+  background: #1e1414;
+  border-color: #3a1f1f;
+  color: #ffb0b0;
+}
+.btn.danger:hover {
+  background: #2a1616;
+}
+
+.card {
+  background: linear-gradient(180deg, #181821, #13131a);
+  border: 1px solid #242432;
+  border-radius: var(--radius);
+  padding: var(--space);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.25);
+}
+
+.muted {
+  color: var(--muted);
+}
+.separator {
+  height: 4px;
+  background: var(--brand);
+  margin: 10px 0 24px;
+  border-radius: 999px;
+}
