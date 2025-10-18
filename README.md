@@ -1,1 +1,2 @@
-# FULL-stack
+# PRAYER-MANAGEMENT-SYSTEM
+ISA 2 Project
